@@ -1,0 +1,7 @@
+{
+  "name": "vientos-admin",
+  "short_name": "vientos-admin",
+  "description": "Vientos Admin",
+  "start_url": "/",
+  "display": "standalone"
+}

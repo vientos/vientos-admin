@@ -1,0 +1,32 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="admin-shell">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class AdminShell extends Polymer.Element {
+      static get is() { return 'admin-shell'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'admin-shell'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(AdminShell.is, AdminShell);
+  </script>
+</dom-module>
